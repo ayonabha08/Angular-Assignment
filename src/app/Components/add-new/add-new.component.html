@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <h2>Add New Fruit </h2>
+        <p>Fruit ID :- <input type ="number" disabled class="form-control" [(ngModel)]="newFru.itemId"/></p>
+        <p>Fruit Name :- <input type ="text" class="form-control" [(ngModel)]="newFru.itemName"/></p>
+        <p>Fruit Price :- <input type ="number" class="form-control" [(ngModel)]="newFru.itemPrice"/></p>
+        <p>Fruit Stock :- <input type ="number" class="form-control" [(ngModel)]="newFru.itemStock"/></p>
+        <p>
+            Select the File: <input type="file" class="form-control" [(ngModel)]="newFru.itemImage"/>
+        </p>  
+        <p>
+            <button class="btn btn-info m-lg-2" (click) ="addNewFruit()" routerLink="/Fruits/All">Save Changes</button>
+            <button class="btn btn-primary" routerLink="/Fruits/All">
+                <i class="fa fa-arrow-left"></i> Back</button>
+        </p>
+    </div>
+  </div>

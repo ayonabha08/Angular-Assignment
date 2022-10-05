@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+      <h2>Details of the Item</h2>
+  
+      <p>
+        <img [src]="selected.itemImage" />
+      </p>
+  
+      <hr />
+  
+      <p>
+        <input type="numer" disabled class="form-control" [(ngModel)]="selected.itemId"/>
+      </p>
+  
+      <p>
+        <input type="text" disabled class="form-control" [(ngModel)]="selected.itemName"/>
+      </p>
+  
+      <p>
+        <input type="number" disabled class="form-control" [(ngModel)]="selected.itemPrice"/>
+      </p>
+  
+      <p>
+        <input type="number" disabled class="form-control" [(ngModel)]="selected.itemStock"/>
+      </p>
+  
+      <p>
+        <button class="btn btn-primary" routerLink="/Fruits/All">
+          <i class="fa fa-arrow-left"></i>
+  
+          Back
+        </button>
+      </p>
+    </div>
+  </div>
+  

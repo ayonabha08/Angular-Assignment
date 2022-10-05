@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row row-md-7" >
+        <div *ngFor="let fr of fruitList" class="card col-md-5 m-2">
+            <div class="row">
+                <div class="col-md-5">
+                    <img style="height: 200px; width:200px" class="card-image" [src]=fr.itemImage>
+                </div>
+                <div class="card-body col-md-2">
+                    <h5 class="card-title">{{fr.itemName}}</h5>
+                    <p class="card-text">{{fr.itemPrice}}</p>
+                    <p class="card-text">{{fr.itemStock}}</p>
+
+  
+                    <div class="row">
+                        <p class="card-text">
+                          <a class="btn btn-info m-1" routerLink="/Fruits/edit/{{ fr.itemId }}">
+                            Edit
+                          <i class="fa fa-pencil fa-fw"></i>
+                        </a>
+                        <a class="btn btn-danger m-1" (click)="deleteFruit(fr.itemId)">                            
+                          Delete
+                          <i class="fa fa-trash fa-fw"></i>
+                        </a>
+                        <a class="btn btn-info m-1" routerLink="/Fruits/view/{{ fr.itemId }}">
+                          View
+                        <i class="fa fa-eye fa-fw"></i>
+                        </a>
+                        
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+  </div>

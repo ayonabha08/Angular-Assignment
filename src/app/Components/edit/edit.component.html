@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+      <h2>Details of the Item</h2>
+  
+      <p>
+        Select the file: <input type="file" class="form-control" [(ngModel)]="foundFruit.itemImage"/>
+      </p>
+  
+      <hr />
+  
+      <p>
+        Item ID: <input type="text" disabled class="form-control" [(ngModel)]="foundFruit.itemId"/>
+      </p>
+  
+      <p>
+        Item Name: <input type="text"  class="form-control" [(ngModel)]="foundFruit.itemName"/>
+      </p>
+  
+      <p>
+        Item itemPrice: <input type="number" class="form-control" [(ngModel)]="foundFruit.itemPrice"/>
+      </p>
+  
+      <p>
+        Item Stock: <input type="number" class="form-control" [(ngModel)]="foundFruit.itemStock"/>
+      </p>
+  
+      <p>
+        <button class="btn btn-primary"  (click)="onSubmit()">
+            <i class="fa fa-check"></i>    
+            Save changes
+          </button>
+        <button class="btn btn-primary" routerLink="/Fruits/All">
+          <i class="fa fa-arrow-left"></i>  
+          Back
+        </button>
+      </p>
+    </div>
+  </div>
+  
